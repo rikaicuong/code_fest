@@ -1,0 +1,35 @@
+<form class="main" [formGroup]="settingForm">
+  <div class="map">
+    <app-maps [data]="data"></app-maps>
+  </div>
+
+  <div class="setting">
+    <div class="matrix mb-2">
+      <div>Matrix</div>
+      <input formControlName="matrix" class="input-text" type="text">
+    </div>
+
+    <div class="option mb-2">
+      <div class="start">
+        <div>Start</div>
+        <input formControlName="start" class="input-text" type="text">
+      </div>
+
+      <div class="end">
+        <div>End</div>
+        <input formControlName="end" class="input-text" type="text">
+      </div>
+    </div>
+
+    <div class="locked mb-2">
+      <div>Locked</div>
+      <textarea formControlName="locked" class="input-text" name="" id="" cols="30" rows="10"></textarea>
+    </div>
+
+    <hr>
+
+    <div class="submit">
+      <button (click)="submitForm()">Start</button>
+    </div>
+  </div>
+</form>

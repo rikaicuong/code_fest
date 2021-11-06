@@ -1,0 +1,31 @@
+<div class="main">
+
+  <div class="colums">
+    <ul id="table" >
+      <li *ngFor="let i of colums">
+        {{i.index}}
+      </li>
+    </ul>
+  </div>
+
+  <div class="rows">
+    <ul id="table" >
+      <li *ngFor="let i of rows">
+        {{i.index}}
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="value">
+      <table [ngStyle]="{'background-color': !!data ? '#000' :'#fff'}" id="table" >
+        <tr *ngFor="let i of colums; index as col">
+          <td *ngFor="let i of rows; index as row">
+            {{i.value}}
+            <!-- <span *ngIf="handleStartValue(row, col)">Start</span> -->
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

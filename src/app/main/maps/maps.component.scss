@@ -1,0 +1,79 @@
+:host {
+  .main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .container {
+      width: 90%;
+      height: 90%;
+      float: right;
+  
+      .value {
+        width: 100%;
+        height: 100%;
+
+        table {
+          width: 100%;
+          height: 100%;
+          tr {
+            td {
+              text-align: center;
+              // border: 1px solid;
+              background-color: #ffffff;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .colums {
+      position: absolute;
+      left: 0;
+      height: 100%;
+
+      ul {
+        height: 90%;
+        padding: 0;
+        margin: 0;
+        justify-content: space-evenly;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        li {
+          list-style: none;
+          font-weight: bold;
+          height: 100%;
+          align-items: center;
+          text-align: center;
+          display: flex;
+        }
+      }
+    }
+
+    .rows {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+
+      ul {
+        width: 90%;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+        text-align: center;
+        display: flex;
+        float: right;
+
+        li {
+          list-style: none;
+          font-weight: bold;
+          width: 100%;
+        }
+      }
+    }
+
+  }
+}
